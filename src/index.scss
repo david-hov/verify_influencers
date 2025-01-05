@@ -1,0 +1,92 @@
+.RaList-actions {
+    margin-bottom: 15px;
+
+    .filter-list {
+        .MuiList-root {
+            display: flex;
+            gap    : 15px;
+            flex-wrap: wrap;
+
+            .MuiChip-label {
+                font-weight: bolder;
+            }
+
+            .Mui-selected {
+                border-radius   : 25px;
+                background-color: #00cc83;
+
+                svg {
+                    display: none;
+                }
+            }
+
+            .MuiListItem-root {
+                .MuiButtonBase-root {
+                    padding      : 0;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+.MuiContainer-root {
+    padding-top: 25px;
+}
+
+.MuiFormHelperText-root {
+    display: none;
+}
+
+.modal-content {
+    padding-bottom: 0;
+
+    .MuiFormControl-root {
+        margin-bottom: 15px;
+    }
+
+    .options {
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 5px;
+        flex: 1;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.RaDatagrid-expandedPanel {
+    .MuiTableCell-body {
+        background-color: #081636 !important;
+    }
+}
+
+.show-page {
+    .MuiToolbar-root {
+        display: none;
+    }
+    .RaShow-card {
+        background-color: transparent !important;
+    }
+}
+
+.container-info {
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+    .MuiGrid-item {
+        padding-top: 0;
+    }
+}
+
+.MuiTable-root {
+    .MuiTableHead-root {
+        th {
+            background-color: #1b2132;
+        }
+    }
+
+    tr {
+        background-color: #171e2f;
+    }
+}
