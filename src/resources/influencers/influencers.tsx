@@ -7,7 +7,7 @@ import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import { StatsCard } from './statistics';
 import { SingleInfluencer } from './singleInfluencer';
 import { useCustomContext } from '../../utils/reducerContext';
-import { Toolbar } from './toolbar';
+import { Toolbar } from './toolbar/toolbar';
 
 const PostFilters = () => {
     const { dispatch, state } = useCustomContext();
