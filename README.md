@@ -26,7 +26,7 @@ The project utilizes several open-source technologies to provide a rich user exp
 
 # Project Overview
 
-This project uses **TypeScript**, **React-Admin** ([Documentation](https://marmelab.com/react-admin/Demos.html)), a great tool for building CMS, tables, and other powerful features. It also uses **SCSS** for styling and **React-Hook-Form** for form handling.
+This project uses **TypeScript**, **React-Admin** ([Documentation](https://marmelab.com/react-admin/Demos.html)), a great tool for building CMS, tables, and other powerful features. It also leverages **React-Query** for efficient data fetching, caching, and synchronization with the server, ensuring a smoother user experience. The project uses **SCSS** for styling and **React-Hook-Form** for form handling.
 
 ## Installation
 
