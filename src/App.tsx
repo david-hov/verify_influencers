@@ -42,9 +42,6 @@ export const App = () => {
             {/* @ts-ignore */}
             <Admin queryClient={queryClient} theme={customDarkBackgroundTheme} layout={Layout} dataProvider={dataProvider}>
                 <Resource
-                    options={{
-                        label: 'Influencers'
-                    }}
                     name='influencers'
                     list={InfluenceresList}
                 />

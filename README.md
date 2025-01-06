@@ -7,12 +7,14 @@
 ### Features
 
 - **React-Admin Integration** for easy CMS and table management
+- **Material-UI** for a modern and responsive UI design
 - **SCSS** for styling
 - **React Hook Form** for seamless form handling
+- **React-Query** for data fetching
 - **AI Integration** using ChatGPT model `gpt-4o-mini`
 - **Configurable AI settings** via `.env` file
 - **Import and manage influencer data efficiently**
-- **Sample Data Switcher**
+- **Sample Data Switcher** `use Sample data or Real data from openAI`
 
 ## Tech Stack
 
