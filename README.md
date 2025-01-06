@@ -62,14 +62,19 @@ The project is structured as follows:
 src/
 ├── resources/                     # Resources for the app (e.g., data, components)
 │   ├── influencers/               # Influencer data and components
-│   │   ├── InfluencerList/        # Influencer list as a panel
-│   │   ├── SingleInfluencer/      # Expandable panel for a single influencer
-│   │   └── StatisticsCard/        # Card for influencer statistics
+│   │   ├── influencers            # Influencer list as a panel
+│   │   ├── singleInfluencer       # Expandable panel for a single influencer
+│   │   └── statistics             # Card for influencer statistics
+│   ├── toolbar/                   # Toolbar components and input components
+│   │   ├── To Toolbar layout and functionality
+│   │   ├── InputComponent         # Custom input fields
+│   │   └── index.js               # Entry point for toolbar components
 │   └── utils/                     # Utility functions and context
-│       └── reducer/               # Reducer wrapped with Context API
+│       ├── reducer/               # Reducer wrapped with Context API
 │       └── sampleData/            # Sample data for testing
 ├── styles/                        # SCSS styles
 └── .env                           # Environment variables
+
 ```
 ## Project Installation
 
