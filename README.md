@@ -66,9 +66,8 @@ src/
 │   │   ├── singleInfluencer       # Expandable panel for a single influencer
 │   │   └── statistics             # Card for influencer statistics
 │   ├── toolbar/                   # Toolbar components and input components
-│   │   ├── To Toolbar layout and functionality
-│   │   ├── InputComponent         # Custom input fields
-│   │   └── index.js               # Entry point for toolbar components
+│   │   ├── toolbar
+│   │   ├── customInputs           # Custom input fields
 │   └── utils/                     # Utility functions and context
 │       ├── reducer/               # Reducer wrapped with Context API
 │       └── sampleData/            # Sample data for testing
