@@ -86,9 +86,6 @@ const MainList = () => {
 
 export const InfluenceresList = () => {
     const listContext = useListController();
-    const customContext = {
-        ...listContext
-    };
 
     if (listContext.isLoading || listContext.isFetching) {
         return <div style={{
@@ -100,7 +97,7 @@ export const InfluenceresList = () => {
     }
 
     return (
-        <ListContextProvider value={customContext}>
+        <ListContextProvider value={listContext}>
             <Form>
                 <BooleanInput defaultValue={!JSON.parse(localStorage.getItem('demo') || 'false')} onChange={(e) => localStorage.setItem('demo', `${!e.target.checked}`)} label='Use Real Data from openAI' source='isDemo' />
             </Form>
