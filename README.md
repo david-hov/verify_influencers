@@ -14,19 +14,6 @@
 - **Import and manage influencer data efficiently**
 - **Sample Data Switcher**
 
-## Influencer Management Tool
-
-**Verify Influencers** is an influencer management tool built with **React-Admin** and **TypeScript**. It allows users to view, manage, and analyze influencer data in an efficient and user-friendly interface.
-
-### Features
-
-- **React-Admin Integration** for easy CMS and table management
-- **SCSS** for styling
-- **React Hook Form** for seamless form handling
-- **AI Integration** using ChatGPT model `gpt-4o-mini`
-- **Configurable AI settings** via `.env` file
-- Import and manage influencer data efficiently
-
 ## Tech Stack
 
 The project utilizes several open-source technologies to provide a rich user experience:
@@ -37,13 +24,13 @@ The project utilizes several open-source technologies to provide a rich user exp
 - [SCSS](https://sass-lang.com/): For robust styling.
 - [ChatGPT API](https://openai.com): Powered by the `gpt-4o-mini` model for AI capabilities.
 
-## Installation
-
-To ensure the correct Node.js version, this project uses an `.nvmrc` file. If you are using [nvm](https://github.com/nvm-sh/nvm) (Node Version Manager), you can run the following command to automatically use the appropriate version:
-
 # Project Overview
 
 This project uses **TypeScript**, **React-Admin** ([Documentation](https://marmelab.com/react-admin/Demos.html)), a great tool for building CMS, tables, and other powerful features. It also uses **SCSS** for styling and **React-Hook-Form** for form handling.
+
+## Installation
+
+To ensure the correct Node.js version, this project uses an `.nvmrc` file. If you are using [nvm](https://github.com/nvm-sh/nvm) (Node Version Manager), you can run the following command to automatically use the appropriate version:
 
 ## API Requests
 
