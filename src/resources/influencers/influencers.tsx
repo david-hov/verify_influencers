@@ -98,7 +98,7 @@ export const InfluenceresList = () => {
             <video width='450' autoPlay={true} controls muted>
                 <source src={ArmeniaVideo} type="video/mp4" />
             </video>
-            <p style={{ textAlign: 'center' }}>Introduction of my country 😊 (during data fetching)</p>
+            <p style={{ textAlign: 'center' }}>Introduction of my country 😊🇦🇲 (during data fetching)</p>
             <Loading />
         </div>
     }
