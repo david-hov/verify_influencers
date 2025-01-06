@@ -8,6 +8,7 @@ import { StatsCard } from './statistics';
 import { SingleInfluencer } from './singleInfluencer';
 import { useCustomContext } from '../../utils/reducerContext';
 import { Toolbar } from './toolbar/toolbar';
+import ArmeniaVideo from '../../assets/Armenia.mp4';
 
 const PostFilters = () => {
     const { dispatch, state } = useCustomContext();
@@ -93,7 +94,13 @@ export const InfluenceresList = () => {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-        }}><Loading /></div>
+        }}>
+            <video width='450' autoPlay={true} controls muted>
+                <source src={ArmeniaVideo} type="video/mp4" />
+            </video>
+            <p style={{ textAlign: 'center' }}>Introduction of my country 😊 (during data fetching)</p>
+            <Loading />
+        </div>
     }
 
     return (
