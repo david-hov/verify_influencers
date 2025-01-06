@@ -85,7 +85,7 @@ Follow these steps to set up the project:
    cp .env.example .env
 2. Set your AI token and model in the .env file:
     ```sh
-    VITE_OPEN_AI=your-ai-token-here<br>
+    VITE_OPEN_AI=your-ai-token-here
     VITE_OPEN_AI_MODEL=gpt-4o-mini
     ```
 Install the dependencies:
