@@ -87,9 +87,7 @@ const MainList = () => {
 export const InfluenceresList = () => {
     const listContext = useListController();
     const customContext = {
-        ...listContext,
-        disableSyncWithLocation: true,
-        emptyWhileLoading: true
+        ...listContext
     };
 
     if (listContext.isLoading || listContext.isFetching) {
