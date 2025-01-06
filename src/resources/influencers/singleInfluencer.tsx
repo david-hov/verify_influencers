@@ -7,6 +7,7 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from 'react';
 
 const formatFollowersCount = (count: number) => {
     if (count >= 1000000) {
@@ -152,8 +153,20 @@ export const SingleInfluencer = () => {
                                         <Typography variant='h5' gutterBottom style={{ fontWeight: 'bolder' }}>
                                             {el.claim}
                                         </Typography>
-                                        {el.evidence[0] ?
-                                            <Link href={el.evidence[0].link} target='_blank' underline='none' style={{ color: '#00db93', display: 'flex', gap: '10px', alignItems: 'center' }}>View Source <OpenInNewIcon fontSize='small' /></Link>
+                                        {el.evidence && el.evidence.length !== 0 ?
+                                            el.evidence.map((item: { title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; journal: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; link: string | undefined; }, index: number) => {
+                                                return (
+                                                    <div key={index}>
+                                                        <Typography variant='h6' gutterBottom style={{ fontWeight: 'bolder' }}>
+                                                            Title - {item.title}
+                                                        </Typography>
+                                                        <Typography variant='subtitle1' gutterBottom style={{ fontWeight: 'bolder' }}>
+                                                            Journal - {item.journal}
+                                                        </Typography>
+                                                        <Link href={item.link} target='_blank' underline='none' style={{ color: '#00db93', display: 'flex', gap: '10px', alignItems: 'center' }}>View Source <OpenInNewIcon fontSize='small' /></Link>
+                                                    </div>
+                                                )
+                                            })
                                             : null}
                                     </div>
                                     <div style={{

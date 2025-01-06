@@ -51,6 +51,7 @@ export const dataProvider = {
                 **Important Instructions**:
                 1. Return the **real-life health influencers top 10** as an **array of objects** with real-life information.
                 2. Categories should avoid redundant or overly similar names.
+                3. Try to set **Evidence Link** should be **real link**, if could not find, in that way give sample link
                 Do not wrap the json codes in JSON markers
                 The result should look like this - for example: ${JSON.stringify(example, null, 2)}
             `;
@@ -62,7 +63,8 @@ export const dataProvider = {
                     **Important Instructions**:
                     1. Return the **real-life health influencers** as an **array of objects** with real-life information.
                     2. Categories should avoid redundant or overly similar names.
-                    ${params.filter.influencerName ? `- Specific influencer: '${params.filter.influencerName}'. If this influencer is not found, return an empty array.` : ''}
+                    3. Try to set **Evidence Link** should be **real link**, if could not find, in that way give sample link
+                    ${params.filter.influencerName ? `- Information about this specific influencer name is '${params.filter.influencerName}'. If this influencer is not found, return an empty array.` : ''}
                     ${params.filter.timeRange ? `- For the period: '${params.filter.timeRange}'.` : ''}
                     ${params.filter.includeRevenueAnalysis ? '- Include revenue analysis.' : ''}
                     ${params.filter.verifyWithScientificJournals ? '- Verify with scientific journals.' : ''}
@@ -84,7 +86,7 @@ export const dataProvider = {
                         },
                         {
                             role: 'user',
-                            content: message,
+                            content: message.split('\n').filter(line => line.trim() !== '').join('\n'),
                         },
                     ],
                 }, {

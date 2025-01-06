@@ -5,7 +5,7 @@ services:
     image: influencers:latest
     container_name: influencer
     ports:
-      - "8080:80"
+      - "80:80"
     environment:
       VITE_OPEN_AI: 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
       VITE_OPEN_AI_MODEL: gpt-4o-mini
