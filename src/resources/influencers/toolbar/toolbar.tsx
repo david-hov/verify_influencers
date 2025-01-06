@@ -68,7 +68,7 @@ const ResearchDialog = (props: DialogProps) => {
 
 export const Toolbar = () => {
     const [open, setOpen] = useState(false);
-    const { setFilters } = useListContext();
+    const { setFilters, refetch } = useListContext();
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -90,7 +90,10 @@ export const Toolbar = () => {
                     Influencer Trust Leaderboard
                 </Typography>
                 <div style={{ display: 'flex', gap: '10px' }}>
-                    <Button onClick={() => setFilters({})} variant='contained'>Clear Research</Button>
+                    <Button onClick={() => {
+                        setFilters({});
+                        refetch();
+                    }} variant='contained'>Clear Research</Button>
                     <Button onClick={handleClickOpen} variant='contained'>Start New Research</Button>
                 </div>
             </div>
