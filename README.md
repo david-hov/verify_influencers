@@ -71,7 +71,7 @@ src/
 │   └── utils/                     # Utility functions and context
 │       ├── reducer/               # Reducer wrapped with Context API
 │       └── sampleData/            # Sample data for testing
-├── styles/                        # SCSS styles
+├── index.scss                     # SCSS styles
 └── .env                           # Environment variables
 
 ```
